@@ -8,7 +8,7 @@ A simple developer console for Godot which uses BBCode syntax for additional sty
 
 This wraps GD.Print so ideally you would use this in place of GD.Print. By default anything sent to the console will not print in the Godot output but the `developer_console/print_to_debug_console` setting can be toggled to allow printing to both. This can also be toggled in code by using `DeveloperConsole.Instance.PrintToDebugConsole = true`.
 
-# Static class
+## Static class
 
 The developer console can be accessed using these static methods eg. `DeveloperConsole.PrintErr("Something went wrong")`
 
