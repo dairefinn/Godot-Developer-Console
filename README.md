@@ -1,4 +1,4 @@
-# Godot-Developer-Console
+# Godot developer console
 
 <img width="1143" height="638" alt="image" src="https://github.com/user-attachments/assets/63a179a7-6904-4ed1-aeec-713298d006d6" />
 
