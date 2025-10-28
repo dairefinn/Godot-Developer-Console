@@ -1,2 +1,24 @@
 # Godot-Developer-Console
-A simple developer console for Godot
+
+<img width="1143" height="638" alt="image" src="https://github.com/user-attachments/assets/63a179a7-6904-4ed1-aeec-713298d006d6" />
+
+A simple developer console for Godot which uses BBCode syntax for additional styling.
+
+Will create a Singleton instance which can be called from anywhere using `DeveloperConsole.Print()`.
+
+This wraps GD.Print so ideally you would use this in place of GD.Print. By default anything sent to the console will not print in the Godot output but the `developer_console/print_to_debug_console` setting can be toggled to allow printing to both. This can also be toggled in code by using `DeveloperConsole.Instance.PrintToDebugConsole = true`.
+
+Static properties and methods:
+- `IsFocused`: Boolean value which will indicate if the console input is focused
+- `Print()`: Prints some basic text without any BBCode styling.
+- `PrintSuccess()`: Prints in green
+- `PrintInfo()`: Prints in blue
+- `PrintWarning()`: Prints in yellow
+- `PrintErr()`: Prints in red
+- `Clear()`: Clears everything in the console
+
+Instance properties and methods:
+- `ClearInstance()`: Clears the console
+- `ClearInput()`: Clears the console input
+- `ShowPreviousCommand()`: Populates the input with the previously entered command
+- `FocusConsoleInput()`: Focuses the console input
