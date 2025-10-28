@@ -2,6 +2,8 @@
 
 <img width="1143" height="638" alt="image" src="https://github.com/user-attachments/assets/63a179a7-6904-4ed1-aeec-713298d006d6" />
 
+---
+
 A simple developer console for Godot which uses BBCode syntax for additional styling.
 
 Will create a Singleton instance which can be called from anywhere using `DeveloperConsole.Print()`.
