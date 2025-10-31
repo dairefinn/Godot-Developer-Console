@@ -235,8 +235,12 @@ public partial class DeveloperConsole : PanelContainer
             BbcodeEnabled = true
         };
 
-        consoleEntriesContainer.AddChild(entry);
+        CallDeferred(MethodName.AddChildAndScrollToBottom, entry);
+    }
 
+    private void AddChildAndScrollToBottom(Node child)
+    {
+        consoleEntriesContainer.AddChild(child);
         CallDeferred(MethodName.ScrollToBottom);
     }
 
